@@ -1,0 +1,18 @@
+{
+  "name": "ucpext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "proxy": "https://privacyapi.evidon.com/",
+  "scripts": {
+    "start":"node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ucpext && npm run build --prefix ucpext",
+    "deploy":"git add . & git commit -m \"auto deply \" & git push origin main" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
